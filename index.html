@@ -27,9 +27,14 @@ WebFontConfig = { fontdeck: { id: '53859' } };
   <link href="css/fabric.css" rel="stylesheet">
   <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMKnUjdoBBFh3Bn8kz2hYxQJtEo/joshosbrn.github.io/53859.css" type="text/css" />
   <link href="images/favicon.png" rel="icon" type="image/png">
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/animatescroll.js"></script>
+
 </head>
 
 <body>
+<div class="scroll-top"></div>
   <div class="container">
     
     <div class="row intro">
@@ -56,6 +61,16 @@ WebFontConfig = { fontdeck: { id: '53859' } };
 
     </div>
 
+    <div class="row sections">
+
+      <div class="twelve columns center">
+
+      <a href="#" onclick="$('.scroll-top').animatescroll({scrollSpeed:750,padding:55,easing:'easeInOutCubic'});">&uarr; Back to Top &uarr;</a>
+
+      </div>
+
+    </div>
+  
   </div>
 
 </body>
