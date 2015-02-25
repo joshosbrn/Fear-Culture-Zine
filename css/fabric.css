@@ -1,0 +1,473 @@
+/*
+* Copyright 2015, Josh Osborne
+* fabricframework.net
+* 1/1/2015
+*/
+
+
+/* Table of contents
+–––––––––––––––––––––
+01 - Typography
+02 - Buttons
+03 - Forms
+04 - Links
+05 - Grid
+06 - Clears
+*/
+
+/* 01 - Typography */
+
+body {
+ font-family:"Maison Neue Book", Calibri, Arial, Roboto, sans-serif; 
+  line-height: 1.5;
+  font-size: 100%;
+  letter-spacing: .03em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0 0 3px 0;
+  margin: 0 0 3px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:"Maison Neue Book", Calibri, Arial, Roboto, sans-serif; 
+  line-height: 1;
+  margin-bottom: 0em;
+}
+
+h1,
+.h1 {
+  font-size: 3rem;
+  color: #181818;
+  font-weight: bold;
+  line-height: 1.2em;
+}
+
+h2,
+.h2 {
+  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
+  font-size: 35px;
+  line-height: 1.5em;
+  color: #353535;
+}
+
+h3,
+.h3 {
+  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
+  font-size: 25px;
+  line-height: 1em;
+  color: #353535;
+}
+
+h4,
+.h4 {
+  font-size: 1.3rem;
+  line-height: 1.8em;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
+p,
+.p {
+  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif; 
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #353535;
+  margin-top: 0;
+}
+
+.letter-text {
+  line-height: 2.1em;
+  font-size: .9em;
+}
+
+.highlight {
+  color: #3F00C9;
+  font-weight: 700;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 60px 0 40px 0;
+}
+
+.contact-small {
+  font-size: .9em;
+  color: #c8c8c8;
+}
+
+.spread {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 02 - Buttons */
+
+button,
+.button {
+  font-weight: normal;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  background: none;
+  line-height: 1.125;
+  padding: 1em 1.5rem;
+  margin: 15px 10px 0 0;
+  letter-spacing: .15em;
+  transition: background-color .25s ease-in-out;
+   -moz-transition: background-color .25s ease-in-out;
+   -webkit-transition: background-color .25s ease-in-out;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #0237ff;
+  color: #fff;
+}
+
+.outline {
+  border: 2px solid #0237ff;
+  color: #0237ff;
+}
+
+.dotted {
+  border: 2px dotted #3F00C9;
+  color: #3F00C9;
+}
+
+.filled {
+  background: #3F00C9;
+  color: #fff;
+  border: none;
+}
+
+.small {
+  font-size: .85em;
+}
+
+.medium {
+  font-size: 1em;
+}
+
+.large {
+  font-size: 1.25em;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button-link {
+  text-decoration: none;
+  font-size: 1em;
+  border-bottom: none;
+}
+
+.button-link:hover {
+  opacity: 10;
+}
+
+/* 03 - Forms */
+
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 50px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box; 
+  width: 85%;
+}
+
+/* Removes awkard default styles on some inputs for iOS */
+input[type="email"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; 
+}
+
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #3F00C9;
+  outline: 0; 
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; 
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0; 
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline; 
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal; 
+}
+
+.radio-label {
+  margin: 0 0 0 20px;
+}
+
+.column-header {
+  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif;
+}
+
+/* 04 - Links */
+
+a { 
+  color: #0237ff;
+  text-decoration: none;
+  letter-spacing: 0;
+  border-bottom: 2px dotted #CCCCCC;
+  font-size: .9em;
+  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.small-link {
+  border-bottom: none;
+  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif; 
+}
+
+a:hover { 
+  opacity: .4;
+}
+
+img {
+width: 100%;
+}
+
+.logo {
+  width: auto;
+  margin: 0 0 10px 0;
+}
+
+.intro {
+  margin: 150px 0 0 0;
+}
+
+.sections {
+  margin-top: 110px;
+}
+
+.section-header {
+  margin: 110px 0 60px 0;
+}
+
+.thumbnails {
+  margin-top: 50px;
+}
+
+.role {
+  font-size: .8em;
+  color: #eee;
+  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+}
+
+
+/* 05 - Grid */
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  box-sizing: border-box; }
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 95%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 95%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+
+.profile-block {
+  text-align: center;
+}
+
+.team-name {
+  color: #eee;
+  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+}
+
+.dark {
+  color: #000;
+}
+
+.team-photo {
+  margin: 0 0 -75px 0;
+}
+
+/* 06 Clears */
+
+.container:after,
+.row:after,
+.u-cf { 
+  content: "";
+  display: table;
+  clear: both; }
+
+  code {
+  padding: .2rem .5rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #f9f9f9;
+  border: 1px solid #E1E1E1;
+  border-radius: 2px;
+  word-wrap: break-word; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+
+  /* 07 Utility Classes */
+
+.center {
+  text-align: center;
+}
