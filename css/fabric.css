@@ -63,7 +63,7 @@ h2,
 
 h3,
 .h3 {
-  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
+  font-family:"Maison Neue medium", Calibri, Arial, Roboto, sans-serif;
   font-size: 25px;
   line-height: 1em;
   color: #353535;
@@ -199,6 +199,18 @@ button:hover {
 
 .button-link:hover {
   opacity: 10;
+}
+
+.back-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3em;
+  border-bottom: none;
+}
+
+.light {
+  color: #fff;
 }
 
 /* 03 - Forms */
@@ -340,6 +352,30 @@ width: 100%;
 
 
 /* 05 - Grid */
+
+.footer-wrapper {
+  background-color: #252525;
+  color: #fff;
+  height: 250px;
+}
+
+.footer-container {
+  padding: 50px 0 75px 0;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.footer-link {
+  color: #fff;
+}
+
+.colophon-text {
+  padding: 15px 0 0 0;
+}
 
 
 .container {
