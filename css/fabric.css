@@ -63,7 +63,7 @@ h2,
 
 h3,
 .h3 {
-  font-family:"Maison Neue medium", Calibri, Arial, Roboto, sans-serif;
+  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
   font-size: 25px;
   line-height: 1em;
   color: #353535;
@@ -83,6 +83,10 @@ h5,
 h6,
 .h6 {
   font-size: 1rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 p,
@@ -356,17 +360,14 @@ width: 100%;
 .footer-wrapper {
   background-color: #252525;
   color: #fff;
-  height: 250px;
+  padding: 0 25px;
 }
 
 .footer-container {
-  padding: 50px 0 75px 0;
-  position: relative;
-  width: 100%;
+  padding: 50px 25px 50px 25px;
+  background-color: #252525;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 100px;
-  box-sizing: border-box;
 }
 
 .footer-link {
