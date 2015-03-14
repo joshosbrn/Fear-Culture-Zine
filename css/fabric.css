@@ -18,7 +18,7 @@
 /* 01 - Typography */
 
 body {
- font-family:"Maison Neue Book", Calibri, Arial, Roboto, sans-serif; 
+ font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif; 
   line-height: 1.5;
   font-size: 100%;
   letter-spacing: .03em;
@@ -40,7 +40,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:"Maison Neue Book", Calibri, Arial, Roboto, sans-serif; 
+   font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif;
+  font-weight: medium;
   line-height: 1;
   margin-bottom: 0em;
 }
@@ -55,7 +56,8 @@ h1,
 
 h2,
 .h2 {
-  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
+  font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif;
+  font-weight: medium;
   font-size: 35px;
   line-height: 1.5em;
   color: #353535;
@@ -63,7 +65,8 @@ h2,
 
 h3,
 .h3 {
-  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif;
+  font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif;
+  font-weight: medium;
   font-size: 25px;
   line-height: 1em;
   color: #353535;
@@ -91,11 +94,12 @@ h6,
 
 p,
 .p {
-  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif; 
+  font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif; 
   font-size: 1em;
-  line-height: 1.7em;
+  line-height: 1.6em;
   color: #353535;
   margin-top: 0;
+  letter-spacing: 1px;
 }
 
 .letter-text {
@@ -147,6 +151,7 @@ button,
   transition: background-color .25s ease-in-out;
    -moz-transition: background-color .25s ease-in-out;
    -webkit-transition: background-color .25s ease-in-out;
+   font-family:"fira-mono", Calibri, Arial, Roboto, sans-serif;
 }
 
 button:focus {
@@ -296,7 +301,7 @@ label > .label-body {
 }
 
 .column-header {
-  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif;
+  font-family:"fira-mono", Calibri, Arial, Roboto, sans-serif;
 }
 
 /* 04 - Links */
@@ -307,7 +312,7 @@ a {
   letter-spacing: 0;
   border-bottom: 2px dotted #CCCCCC;
   font-size: .9em;
-  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+  font-family:"fira-mono", Calibri, Arial, Roboto, sans-serif; 
 
    transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
@@ -316,7 +321,7 @@ a {
 
 .small-link {
   border-bottom: none;
-  font-family:"Maison Neue book", Calibri, Arial, Roboto, sans-serif; 
+  font-family:"aktiv-grotesk-std", Calibri, Arial, Roboto, sans-serif;
 }
 
 a:hover { 
@@ -347,7 +352,7 @@ width: 100%;
 .role {
   font-size: .8em;
   color: #eee;
-  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+  font-family:"fira-mono", Calibri, Arial, Roboto, sans-serif; 
 }
 
 
@@ -463,6 +468,10 @@ width: 100%;
   margin: 150px 0 0 0;
 }
 
+    .mobile-drop {
+      margin-top: 0;
+    }
+
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
@@ -522,7 +531,7 @@ width: 100%;
 
 .team-name {
   color: #eee;
-  font-family:"Maison Neue mono", Calibri, Arial, Roboto, sans-serif; 
+  font-family:"fira-mono", Calibri, Arial, Roboto, sans-serif; 
 }
 
 .dark {
