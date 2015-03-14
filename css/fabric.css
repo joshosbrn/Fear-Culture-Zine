@@ -332,10 +332,6 @@ width: 100%;
   margin: 0 0 10px 0;
 }
 
-.intro {
-  margin: 150px 0 0 0;
-}
-
 .sections {
   margin-top: 110px;
 }
@@ -412,6 +408,26 @@ width: 100%;
 .spread {
   display: none;
 }
+
+    .book-mockup {
+      margin-top: 45px;
+    }
+
+    .mobile-drop {
+      margin: 80px 0 0 0;
+    }
+
+.sections {
+  margin-top: 0;
+}
+
+.intro-sections {
+  margin-top: 40px;
+}
+
+.intro {
+  margin: 30px 0 0 0;
+}
 }
 
 /* For devices larger than 550px */
@@ -434,6 +450,18 @@ width: 100%;
     .spread {
       display: block;
     }
+
+    .book-mockup {
+      margin-top: 0;
+    }
+
+    .sections {
+  margin-top: 110px;
+}
+
+.intro {
+  margin: 150px 0 0 0;
+}
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
