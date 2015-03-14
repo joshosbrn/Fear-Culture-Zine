@@ -403,6 +403,15 @@ width: 100%;
   .spread {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+.footer-logo {
+  max-width: 100px;
+  display: none;
+}
+
+.spread {
+  display: none;
+}
 }
 
 /* For devices larger than 550px */
@@ -417,6 +426,14 @@ width: 100%;
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
+
+    .footer-logo {
+      display: block;
+    }
+
+    .spread {
+      display: block;
+    }
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
