@@ -127,7 +127,7 @@ hr {
 }
 
 .spread {
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 /* 02 - Buttons */
@@ -396,14 +396,21 @@ width: 100%;
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 95%;
-    padding: 0; }
+    width: 95%; 
+    padding: 25px;
+    text-align: center;
+  }
+  .spread {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+}
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 95%; }
+    width: 95%; 
+    padding: 0px;
+    text-align: left;}
   .column,
   .columns {
     margin-left: 4%; }
